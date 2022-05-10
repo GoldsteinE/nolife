@@ -1,0 +1,10 @@
+[package]
+name = "nolife"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+# Use const string brands, which are kinda horrible but give better error messages
+# If disabled, closure brands will be used instead
+const_string_brands = []
+default = ["const_string_brands"]
